@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Papers - Notesite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/notebook.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Notesite</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="papers.html" class="active">Question Papers</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="papers-container">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-file-pdf"></i> Previous Year Question Papers</h1>
+                <p>Select your preferences to access question papers</p>
+            </div>
+
+            <!-- Selection Panel -->
+            <div class="selection-panel">
+                <div class="selection-card">
+                    <div class="selection-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Step 1: Select Class</h3>
+                    </div>
+                    <div class="class-options">
+                        <button class="class-option active" data-class="10th">10th Standard</button>
+                        <button class="class-option" data-class="12th">12th Standard</button>
+                    </div>
+                </div>
+
+                <div class="selection-card">
+                    <div class="selection-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Step 2: Select Medium</h3>
+                    </div>
+                    <div class="medium-options">
+                        <button class="medium-option active" data-medium="english">English Medium</button>
+                        <button class="medium-option" data-medium="hindi">Hindi Medium</button>
+                    </div>
+                </div>
+
+                <div class="selection-card">
+                    <div class="selection-header">
+                        <i class="fas fa-book"></i>
+                        <h3>Step 3: Select Subject</h3>
+                    </div>
+                    <div class="subject-options" id="subjectOptions">
+                        <!-- Subjects will be populated based on class selection -->
+                        <p>Select a class first to view subjects</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papers Display -->
+            <div class="papers-display">
+                <h2 class="section-title">
+                    <i class="fas fa-download"></i> Available Papers
+                    <span id="selectedInfo">- Select options above</span>
+                </h2>
+                
+                <div class="papers-grid" id="papersGrid">
+                    <!-- Papers will be dynamically loaded here -->
+                    <div class="no-selection">
+                        <i class="fas fa-search"></i>
+                        <h3>Select your class, medium, and subject to view question papers</h3>
+                        <p>Papers from 2018-2022 will be displayed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information Section -->
+            <div class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Exam Preparation Tips</h3>
+                    <ul>
+                        <li>Practice with at least 5 previous year papers</li>
+                        <li>Time yourself while solving papers</li>
+                        <li>Focus on frequently asked questions</li>
+                        <li>Revise important formulas and concepts</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Exam Schedule</h3>
+                    <p>MP Board exams typically start in February/March. Start preparing early!</p>
+                    <p>Check official MP Board website for exact dates.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Need Help?</h3>
+                    <p>If you face any issues accessing papers, contact us at support@notesite.com</p>
+                    <p>We'll respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-book-open"></i>
+                    <h2>Notesite</h2>
+                    <p>Empowering students with quality educational resources</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="papers.html">Question Papers</a>
+                    <a href="index.html#about">About Us</a>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@notesite.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Notesite. All rights reserved.</p>
+                <p>Designed for MP Board Students</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                          </html>
