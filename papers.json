@@ -36,13 +36,13 @@
       }
     },
     "hindi": {
-      "Hindi": {
-        "2022": {
-          "url": "papers/10th/hindi/Hindi/2022.pdf",
-          "fileName": "MP_Board_10th_Hindi_Hindi_2022.pdf",
-          "fileSize": "1.4 MB",
-          "pages": "13",
-          "quality": "Excellent"
+      "Hindi Special": {
+        "2012": {
+          "url": "/10th%20MP%20Hindi%20Medium/2012/10th%20MP%20Board%20Hindi%20Special%202012.pdf",
+          "fileName": "Hindi Special 10th MP Board Hindi Medium 2012.pdf",
+          "fileSize": "254.40 KB",
+          "pages": "04",
+          "quality": "Good"
         }
       }
     }
